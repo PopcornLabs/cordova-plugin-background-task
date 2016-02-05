@@ -9,8 +9,8 @@ BackgroundTask.prototype.start = function (task) {
     exec(task, null, "BackgroundTask", "start", []);
 };
 
-BackgroundTask.prototype.end = function () {
-    exec(null, null, "BackgroundTask", "end", []);
+BackgroundTask.prototype.end = function (task) {
+    exec(task, null, "BackgroundTask", "end", []);
 };
 
 module.exports = new BackgroundTask();
